@@ -1,11 +1,11 @@
 # SITE CONFIGURATION
-baseurl: "/theme"
-url: "https://github.io/"
+baseurl: "/turn-theme"
+url: "https://wes-o.github.io/turn-theme/"
 
 # THEME-SPECIFIC CONFIGURATION
 theme_settings:
   # Meta
-  title: Type Theme
+  title: Turn Theme
   avatar: assets/img/avatar.png
   favicon: assets/favicon.ico
   gravatar: # Email MD5 hash
