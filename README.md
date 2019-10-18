@@ -2,23 +2,64 @@
 
 Welcome! 
 
-## Installation
+[View Online](https://wes-o.github.io/turn-theme/)
 
-Add this line to your Jekyll site's `Gemfile`:
+To get started immediately: 
+
+1. Fork and clone the [Turn Theme repo](https://github.com/wes-o/turn-theme): `git clone https://github.com/wes-o/turn-theme`
+2. [Install Jekyll](https://jekyllrb.com/docs/installation/): `gem install jekyll`
+3. Install the theme's dependencies: `bundle install`
+4. Customize theme (see instructions below)
+5. Run the Jekyll server: ` bundle exec jekyll serve`
+
+
+## Fast Installation
+
+A few scripts are provided to speed up your development workflow:
+
+First off: 
+`git clone https://www.github.com/wes-o/turn-theme`
+
+`cd turn-theme` into the project then in your terminal/command prompt..  
+
+	// dependencies 
+	$ script/bootstrap
+
+	// test build status
+	$ script/build
+
+	// start the Jekyll server at localhost:4000
+	$ script/server 
+
+How fast was that for you?
+
+
+Maybe you would like more clarification. That's fine!
+
+## Detailed Installation 
+
+Make a new directory for a Jekyll site, a new Ruby Gem, then add the line to your Jekyll site's `Gemfile`:
+
+	$ jekyll new jekyll-site && cd jekyll-site 
+
+Edit your `Gemfile` as:
 
 ```ruby
-gem "turn-theme"
+source "https://rubygems.org"
+gem 'github-pages'
 ```
 
 And add this line to your Jekyll site's `_config.yml`:
 
 ```yaml
-theme: turn-theme
+theme: 
+	title: Turn Theme
 ```
 
 And then execute:
 
-    $ bundle
+    $ bundle install 
+    $ bundle exec jekyll serve
 
 Or install it yourself as:
 
@@ -26,7 +67,7 @@ Or install it yourself as:
 
 To experiment with this code, add some sample content and run `bundle exec jekyll serve` – this directory is setup just like a Jekyll site!
 
-## Usage
+## Sass Usage 
 
 Please follow this directory structure when making a pull request:
 
@@ -39,25 +80,17 @@ Please follow this directory structure when making a pull request:
 When the pull request is reviewed, the maintainer of this project will have a much easier time with incorporation into the larger structure.
 
 
-### The _sass Folder Structure:
+### The current _sass folder structure:
 
--Abstracts: functions, mixins, and variables
--Base: animations, base, typography, and utilities
--External: based on normalize.css project 
--Components: a single scss file for each component. For example, _button.scss , _slider.scss
--Layout: header, footer, grid, navigation. Overall wireframe.
--turn-theme.scss
+	-Abstracts: functions, mixins, and variables
+	-Base: animations, base, typography, and utilities
+	-External: based on normalize.css project 
+	-Components: a single scss file for each component. For example, _button.scss , _slider.scss
+	-Layout: header, footer, grid, navigation. Overall wireframe.
+	-turn-theme.scss
 
 A free and open-source [Jekyll](https://jekyllrb.com) theme. Great for blogs and easy to customize.
 
-[Online](https://wes-o.github.io/turn-theme/)
-
-
-1. Fork and clone the [Turn Theme repo](https://github.com/wes-o/turn-theme): `git clone https://github.com/wes-o/turn-theme`
-2. [Install Jekyll](https://jekyllrb.com/docs/installation/): `gem install jekyll`
-3. Install the theme's dependencies: `bundle install`
-4. Customize theme (see instructions below)
-5. Run the Jekyll server: ` bundle exec jekyll serve`
 
 ## Customizing
 
